@@ -1,0 +1,136 @@
+:root{--icon-color :white}
+
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+   
+    color: white;
+
+}
+
+.header{
+    width:100vw;
+    background-color: #1e567e;
+    display:grid;
+    grid-template-columns: 20% 60% 20% ;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header nav{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    color:white;
+}
+
+.header__icons{
+    display:flex;
+    flex-direction: row;
+
+}
+
+.header .header__logo img{
+    
+  min-width: 150px;
+  width:50%;
+
+}
+
+.header__icons ,.header__icon--whishlist{
+    color: var(--icon-color);
+    cursor: pointer;
+
+}
+
+
+
+
+.header__nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    
+}
+
+.header__nav a:focus,
+.header__nav a:active{
+  color:var(--icon-color);
+
+}
+
+/* Hide menu toggle by default */
+.header__menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--icon-color);
+  padding: 10px;
+}
+
+/* Mobile Navigation Behavior */
+@media (max-width: 768px) 
+{
+  .header {
+    grid-template-columns: 10% 30% 30%; /* Adjust for smaller screen */
+    padding: 10px;
+  }
+
+  .header nav{
+    display: none;
+    flex-direction: column;
+    background-color: #1e567e;
+    position: absolute;
+    top: 142px; /* adjust based on your header height */
+    left: 0;
+    width: 25%;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+
+  .header nav.open{
+    display: flex;
+  }
+
+  .header__menu-toggle {
+    display: block;
+  }
+
+  .header__cart-aside {
+        width: 80%;
+    }
+
+
+}
+.prayer-mats-wrapper
+,.prayer-wear-wrapper {
+  position: relative; /* So the nav is positioned relative to this */
+}
+
+.prayer-mats-nav ,
+.prayer-wear-nav{
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: -20px;
+  background: #1e567e;
+  z-index: 1000;
+  width: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+
+.prayer-mats-wrapper:hover .prayer-mats-nav,
+.prayer-wear-wrapper:hover .prayer-wear-nav{
+  display: flex;
+}
+
+
+
+
+
+

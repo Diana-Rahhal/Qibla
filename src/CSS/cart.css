@@ -1,0 +1,142 @@
+/* === CART SIDEBAR === */
+.header__cart-aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 25%;
+  min-width: 250px;
+  height: 100vh;
+  background-color: white;
+  color: #1e567e;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+  padding: 0 20px;
+  display: none; /* default hidden */
+  flex-direction: column;
+}
+
+/* Show Cart */
+.header__cart-aside.show {
+  display: flex;
+}
+
+/* Cart Title */
+.cart__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1e567e;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+/* Close Button */
+.cart__close-btn {
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.cart__close-btn:hover {
+  transform: rotate(180deg);
+}
+
+/* Scrollable Items Container */
+.cart__items-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 70px; /* leave space for footer */
+}
+
+/* Individual Cart Item */
+.cart__item {
+  display: grid;
+  grid-template-columns: 60px 1fr auto auto;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Item Image */
+.cart__item__image img {
+  width: 60px;
+}
+
+/* Quantity Controls */
+.cart__item__controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart__item__decrement-btn,
+.cart__item__increment-btn {
+  border: none;
+  background-color: #1e567e;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cart__item__decrement-btn:hover,
+.cart__item__increment-btn:hover {
+  background-color: #163e5a;
+}
+
+/* === CART FOOTER === */
+.cart__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85%;
+  border-top: 1px solid #1e567e;
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Subtotal Line */
+.cart__footer__subtotal {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+/* Checkout Button */
+.cart__footer__checkout-btn {
+  background-color: #1e567e;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.cart__footer__checkout-btn:hover {
+  background-color: #163e5a;
+}
+
+/* === BACKDROP OVERLAY WHEN CART IS OPEN === */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 900;
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+}
