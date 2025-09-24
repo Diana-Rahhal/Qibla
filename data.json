@@ -1,0 +1,101 @@
+{
+  "prayerMatsCollections": [
+    {
+      "id": 1,
+      "name": "original",
+      "totalNumberOfItems": 3,
+      "image": "../images/original.png"
+    },
+    {
+      "id": 2,
+      "name": "premium",
+      "totalNumberOfItems": 3,
+      "image": "../images/premium.png"
+    },
+    {
+      "id": 3,
+      "name": "littleOnes",
+      "totalNumberOfItems": 3,
+      "image": "../images/littleOnes.png"
+    },
+    {
+      "id": 4,
+      "name": "portable",
+      "totalNumberOfItems": 3,
+      "image": "../images/portable.png"
+    }
+  ],
+
+  "prayerMats": [
+    {
+      "collectionName": "original",
+      "products": [
+        {
+          "id": 1,
+          "name": "Antique Indian Arch Prayer Mat",
+          "description": "Experience the ultimate comfort with Urban Rugs Premium Collection of Padded Prayer Rugs...",
+          "price": 20,
+          "image": "../images/prayerMats/original1.png"
+        },
+        {
+          "id": 2,
+          "name": "Modern Turkish Design Prayer Mat",
+          "description": "Beautifully crafted with unique patterns and soft padding for maximum comfort...",
+          "price": 25,
+          "image": "../images/prayerMats/original2.png"
+        }
+      ]
+    }
+   
+  ],
+
+  "prayerWearCollections": [
+    {
+      "id": 1,
+      "name": "Women",
+      "totalNumberOfItems": 3,
+      "image": "../images/prayerWear/women.png"
+    },
+    {
+      "id": 2,
+      "name": "Men",
+      "totalNumberOfItems": 3,
+      "image": "../images/prayerWear/men.png"
+    },
+    {
+      "id": 3,
+      "name": "Kids",
+      "totalNumberOfItems": 3,
+      "image": "../images/prayerWear/kids.png"
+    },
+    {
+      "id": 4,
+      "name": "portable",
+      "totalNumberOfItems": 3,
+      "image": "../images/portable.png"
+    }
+  ],
+
+  "prayerWears": [
+    {
+      "collectionName": "Women",
+      "products": [
+        {
+          "id": 1,
+          "name": "Classic Cotton Prayer Wear",
+          "description": "Breathable cotton fabric for everyday prayers.",
+          "price": 30,
+          "image": "../images/prayerWears/original1.png"
+        },
+        {
+          "id": 2,
+          "name": "Lightweight Jersey Prayer Wear",
+          "description": "Soft and stretchable material for comfort.",
+          "price": 35,
+          "image": "../images/prayerWears/original2.png"
+        }
+      ]
+    }
+   
+  ]
+}

@@ -1,11 +1,14 @@
-export default function Collection(props){
+import '../CSS/collections.css'
+
+export default function Collection({collection}){
+    
 
     return(  
-         <div class="collection">
-                <img src={props.imgSource} alt="img"></img>
-                <div class="collection-name">{props.name}</div>
-                <div class="total-number-of-products">{props.totalNumberOfProducts}</div>
-                <div class="view-btn"><button>View</button></div>
+         <div className="collection">
+                <img src={collection.image} alt="img"></img>
+                <div className="collection-name">{collection.name}</div>
+                <div className="total-number-of-products">{collection.totalNumberOfItems}</div>
+                <div className="view-btn"><button>View</button></div>
             </div>
         );
 
