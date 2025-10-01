@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 
 // Create the context
-export  const WearsCollectionContext = createContext([]);
+export const WearsCollectionContext = createContext([]);
 
 export default function WearCollectionsProvider({ children }) {
   const [collections, setCollections] = useState([]);
@@ -15,7 +15,14 @@ export default function WearCollectionsProvider({ children }) {
           }
           return response.json();
         })
-        .then((data) => setCollections(data))
+        .then((data) => {
+          // Add type field before saving
+          const collectionsWithType = data.map((item) => ({
+            ...item,
+            type: "prayer-wears", // since this fetch is only for wears
+          }));
+          setCollections(collectionsWithType);
+        })
         .catch((error) => {
           console.error("Fetch Error:", error);
         });

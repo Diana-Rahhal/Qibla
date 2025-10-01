@@ -18,7 +18,12 @@ export default function MatsCollectionProvider({children})
         return response.json(); // ✅ return the JSON
       })
       .then((data) => {
-        setCollections(data) // ✅ use the parsed JSON
+         // Add type field before saving
+          const collectionsWithType = data.map((item) => ({
+            ...item,
+            type: "prayer-mats", // since this fetch is only for wears
+          }));
+          setCollections(collectionsWithType);
       })
       .catch((error) => {
         console.error("Fetch error:", error);

@@ -118,15 +118,21 @@ body{
   background: #1e567e;
   z-index: 1000;
   width: 150px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-size: small;
 }
 
 .prayer-mats-wrapper:hover .prayer-mats-nav,
 .prayer-wear-wrapper:hover .prayer-wear-nav{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.prayer-mats-nav li,
+.prayer-wear-nav li{
+  list-style-type: none;
+  padding:10px;
+
 }
 
 

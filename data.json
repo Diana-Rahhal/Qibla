@@ -67,12 +67,6 @@
       "name": "Kids",
       "totalNumberOfItems": 3,
       "image": "../images/prayerWear/kids.png"
-    },
-    {
-      "id": 4,
-      "name": "portable",
-      "totalNumberOfItems": 3,
-      "image": "../images/portable.png"
     }
   ],
 
@@ -85,17 +79,39 @@
           "name": "Classic Cotton Prayer Wear",
           "description": "Breathable cotton fabric for everyday prayers.",
           "price": 30,
-          "image": "../images/prayerWears/original1.png"
+          "image": "../images/prayerWear/women1.png"
         },
         {
           "id": 2,
           "name": "Lightweight Jersey Prayer Wear",
           "description": "Soft and stretchable material for comfort.",
           "price": 35,
-          "image": "../images/prayerWears/original2.png"
+          "image": "../images/prayerWear/women2.png"
         }
       ]
-    }
+    },
+    {
+      "collectionName": "men",
+      "products": [
+        {
+          "id": 1,
+          "name": "Classic Cotton Prayer Wear",
+          "description": "Breathable cotton fabric for everyday prayers.",
+          "price": 30,
+          "image": "../images/prayerWear/women1.png"
+        },
+        {
+          "id": 2,
+          "name": "Lightweight Jersey Prayer Wear",
+          "description": "Soft and stretchable material for comfort.",
+          "price": 35,
+          "image": "../images/prayerWear/women2.png"
+        }
+      ]
+  }
+  
+    
    
   ]
+
 }

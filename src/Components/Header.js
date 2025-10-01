@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useState , useContext} from "react";
 import { Link } from "react-router-dom"; 
 import "../CSS/header.css";
 import Cart from './Cart';
+import {MatsCollectionContext } from "../Context/MatsCollectionContext";
+import {WearsCollectionContext } from "../Context/WearsCollectionContext";
 
 export default function Header() {
   const [cartOpen, setCartOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const Matscollections= useContext(MatsCollectionContext) || [];
+  const Wearcollections= useContext(WearsCollectionContext) || [];
 
   return (
     <div className="header">
@@ -28,18 +33,21 @@ export default function Header() {
         <div className="prayer-mats-wrapper">
           <Link className="prayer-mats-tag" to="/prayer-mats">Prayer Mats</Link>
           <div className="prayer-mats-nav">
-            <Link to="/collections/original">Original</Link>
-            <Link to="/collections/premium">Premium</Link>
-            <Link to="/collections/little-ones">Little Ones</Link>
+            {Matscollections.map((collection)=>(<li key={collection.id}>
+                  <Link to={`/prayer-mats/${collection.name}`}>
+                  {collection.name}
+                  </Link></li>))}
+             
           </div>
         </div>
 
         <div className="prayer-wear-wrapper">
           <Link className="prayer-wear-tag" to="/prayer-wear">Prayer Wear</Link>
           <div className="prayer-wear-nav">
-            <Link to="/collections/women">Women</Link>
-            <Link to="/collections/men">Men</Link>
-            <Link to="/collections/kids">Kids</Link>
+         {Wearcollections.map((collection)=>(<li key={collection.id}>
+                  <Link to={`/prayer-wears/${collection.name}`}>
+                  {collection.name}
+                  </Link></li>))}
           </div>
         </div>
 
