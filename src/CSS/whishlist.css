@@ -1,0 +1,148 @@
+
+.wishlistPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%) scale(0.95);
+  width: 400px;
+  max-height: 80vh;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+
+.wishlistPopup.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+  color:black;
+}
+
+
+/* Header */
+.wishlistPopup__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+}
+
+.wishlistPopup__header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.wishlistPopup__header button {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.wishlistPopup__header button:hover {
+  transform: scale(1.1);
+  color: #ff4d4f;
+}
+
+/* Items Container */
+.wishlistPopup__items-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 16px;
+}
+
+/* Individual Item */
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  gap: 12px;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item__img img {
+  width: 60px;
+  /* height: 100px;
+  object-fit: cover; */
+  border-radius: 8px;
+}
+
+.item__name {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.item__price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+/* Remove Button */
+.item__remove-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.item__remove-btn:hover {
+  background: #ffecec;
+  transform: scale(1.1);
+}
+
+.item__remove-btn svg {
+  color: #ff4d4f;
+  width: 20px;
+  height: 20px;
+}
+
+/* Scrollbar styling */
+.wishlistPopup__items-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.wishlistPopup__items-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 6px;
+}
+
+.wishlistPopup__items-container::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Animation */
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}

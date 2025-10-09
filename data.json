@@ -1,117 +1,73 @@
 {
   "prayerMatsCollections": [
-    {
-      "id": 1,
-      "name": "original",
-      "totalNumberOfItems": 3,
-      "image": "../images/original.png"
-    },
-    {
-      "id": 2,
-      "name": "premium",
-      "totalNumberOfItems": 3,
-      "image": "../images/premium.png"
-    },
-    {
-      "id": 3,
-      "name": "littleOnes",
-      "totalNumberOfItems": 3,
-      "image": "../images/littleOnes.png"
-    },
-    {
-      "id": 4,
-      "name": "portable",
-      "totalNumberOfItems": 3,
-      "image": "../images/portable.png"
-    }
+    { "id": 1, "name": "original", "totalNumberOfItems": 3, "image": "../images/original.png" },
+    { "id": 2, "name": "premium", "totalNumberOfItems": 3, "image": "../images/premium.png" },
+    { "id": 3, "name": "littleOnes", "totalNumberOfItems": 3, "image": "../images/littleOnes.png" },
+    { "id": 4, "name": "portable", "totalNumberOfItems": 3, "image": "../images/portable.png" }
   ],
-
   "prayerMats": [
     {
       "collectionName": "original",
       "products": [
-        {
-          "id": 1,
-          "name": "Antique Indian Arch Prayer Mat",
-          "description": "Experience the ultimate comfort with Urban Rugs Premium Collection of Padded Prayer Rugs...",
-          "price": 20,
-          "image": "../images/prayerMats/original1.png"
-        },
-        {
-          "id": 2,
-          "name": "Modern Turkish Design Prayer Mat",
-          "description": "Beautifully crafted with unique patterns and soft padding for maximum comfort...",
-          "price": 25,
-          "image": "../images/prayerMats/original2.png"
-        }
+        { "id": 1, "name": "Antique Indian Arch Prayer Mat", "description": "Experience the ultimate comfort and craftsmanship.", "price": 20, "image": "../images/prayerMats/original1.png" },
+        { "id": 2, "name": "Modern Turkish Design Prayer Mat", "description": "Beautifully crafted with unique patterns.", "price": 25, "image": "../images/prayerMats/original2.png" },
+        { "id": 3, "name": "Classic Floral Original Mat", "description": "Soft and durable mat with classic floral patterns.", "price": 22, "image": "../images/prayerMats/original3.png" }
+      ]
+    },
+    {
+      "collectionName": "premium",
+      "products": [
+        { "id": 1, "name": "Luxury Persian Mat", "description": "Premium fabric and exquisite embroidery.", "price": 50, "image": "../images/prayerMats/premium1.png" },
+        { "id": 2, "name": "Golden Silk Prayer Mat", "description": "Soft silk with elegant gold accents.", "price": 60, "image": "../images/prayerMats/premium2.png" },
+        { "id": 3, "name": "Velvet Comfort Premium Mat", "description": "Ultra-comfortable velvet surface.", "price": 55, "image": "../images/prayerMats/premium3.png" }
+      ]
+    },
+    {
+      "collectionName": "littleOnes",
+      "products": [
+        { "id": 1, "name": "Blue-Ish Kids Prayer Mat", "description": "Encourage your kids to pray with a prayer mat that’s designed especially for them. Qibla Kids Collection is colorful, padded with soft fabrics that will encourage them not to miss a prayer.", "price": 15, "image": "../images/prayerMats/littleOnes1.png" },
+        { "id": 2, "name": "Dreamy Kids Prayer Mat", "description": "Encourage your kids to pray with a prayer mat that’s designed especially for them. Qibla Kids Collection is colorful, padded with soft fabrics that will encourage them not to miss a prayer.", "price": 16, "image": "../images/prayerMats/littleOnes2.png" },
+        { "id": 3, "name": "Midnight in Mecca Kids Prayer Mat", "description": "Encourage your kids to pray with a prayer mat that’s designed especially for them. Qibla Kids Collection is colorful, padded with soft fabrics that will encourage them not to miss a prayer.", "price": 17, "image": "../images/prayerMats/littleOnes3.png" }
+      ]
+    },
+    {
+      "collectionName": "portable",
+      "products": [
+        { "id": 1, "name": "Foldable Travel Mat", "description": "Compact mat for travel or outdoor use.", "price": 18, "image": "../images/prayerMats/portable1.png" },
+        { "id": 2, "name": "Lightweight Roll-Up Mat", "description": "Easy to carry and store.", "price": 19, "image": "../images/prayerMats/portable2.png" },
+        { "id": 3, "name": "Pocket-Sized Mat", "description": "Ultra-portable for daily use.", "price": 20, "image": "../images/prayerMats/portable3.png" }
       ]
     }
-   
   ],
-
   "prayerWearCollections": [
-    {
-      "id": 1,
-      "name": "Women",
-      "totalNumberOfItems": 3,
-      "image": "../images/prayerWear/women.png"
-    },
-    {
-      "id": 2,
-      "name": "Men",
-      "totalNumberOfItems": 3,
-      "image": "../images/prayerWear/men.png"
-    },
-    {
-      "id": 3,
-      "name": "Kids",
-      "totalNumberOfItems": 3,
-      "image": "../images/prayerWear/kids.png"
-    }
+    { "id": 1, "name": "women", "totalNumberOfItems": 3, "image": "../images/prayerWear/women.png" },
+    { "id": 2, "name": "men", "totalNumberOfItems": 3, "image": "../images/prayerWear/men.png" },
+    { "id": 3, "name": "kids", "totalNumberOfItems": 3, "image": "../images/prayerWear/kids.png" }
   ],
-
   "prayerWears": [
     {
-      "collectionName": "Women",
+      "collectionName": "women",
       "products": [
-        {
-          "id": 1,
-          "name": "Classic Cotton Prayer Wear",
-          "description": "Breathable cotton fabric for everyday prayers.",
-          "price": 30,
-          "image": "../images/prayerWear/women1.png"
-        },
-        {
-          "id": 2,
-          "name": "Lightweight Jersey Prayer Wear",
-          "description": "Soft and stretchable material for comfort.",
-          "price": 35,
-          "image": "../images/prayerWear/women2.png"
-        }
+        { "id": 1, "name": "Classic Cotton Abaya", "description": "Breathable cotton fabric for daily prayers.", "price": 30, "image": "../images/prayerWear/women1.png" },
+        { "id": 2, "name": "Elegant Prayer Dress", "description": "Flowy dress with beautiful embroidery.", "price": 40, "image": "../images/prayerWear/women2.png" },
+        { "id": 3, "name": "Comfort Hijab Set", "description": "Soft matching hijab and dress set.", "price": 35, "image": "../images/prayerWear/women3.png" }
       ]
     },
     {
       "collectionName": "men",
       "products": [
-        {
-          "id": 1,
-          "name": "Classic Cotton Prayer Wear",
-          "description": "Breathable cotton fabric for everyday prayers.",
-          "price": 30,
-          "image": "../images/prayerWear/women1.png"
-        },
-        {
-          "id": 2,
-          "name": "Lightweight Jersey Prayer Wear",
-          "description": "Soft and stretchable material for comfort.",
-          "price": 35,
-          "image": "../images/prayerWear/women2.png"
-        }
+        { "id": 1, "name": "Traditional Thobe", "description": "Comfortable cotton thobe for everyday wear.", "price": 28, "image": "../images/prayerWear/men1.png" },
+        { "id": 2, "name": "Classic Prayer Outfit", "description": "Lightweight fabric for daily prayers.", "price": 32, "image": "../images/prayerWear/men2.png" },
+        { "id": 3, "name": "Elegant Kaftan", "description": "Stylish kaftan for special occasions.", "price": 38, "image": "../images/prayerWear/men3.png" }
       ]
-  }
-  
-    
-   
+    },
+    {
+      "collectionName": "kids",
+      "products": [
+        { "id": 1, "name": "Rosa Islamic Kids Prayer Wear", "description": "Designed for children, this two-piece prayer wear collection from Qibla is crafted from high-quality, breathable fabric to ensure maximum comfort during your little ones daily prayers. The vibrant colors and delightful designs bring a fun and lively touch to the Isdal. This essential prayer outfit offers both style and ease of movement, making it a perfect addition to any child's wardrobe. It also comes with a special bag for easy carrying to the Masjid.", "price": 20, "image": "../images/prayerWear/kids1.png" },
+        { "id": 2, "name": "Lilac Stars Islamic Kids Prayer Wear", "description": "Designed for children, this two-piece prayer wear collection from Qibla is crafted from high-quality, breathable fabric to ensure maximum comfort during your little ones daily prayers. The vibrant colors and delightful designs bring a fun and lively touch to the Isdal. This essential prayer outfit offers both style and ease of movement, making it a perfect addition to any child's wardrobe. It also comes with a special bag for easy carrying to the Masjid.", "price": 22, "image": "../images/prayerWear/kids2.png" },
+        { "id": 3, "name": "Ice Blue Islamic Kids Prayer Wear", "description": "Designed for children, this two-piece prayer wear collection from Qibla is crafted from high-quality, breathable fabric to ensure maximum comfort during your little ones daily prayers. The vibrant colors and delightful designs bring a fun and lively touch to the Isdal. This essential prayer outfit offers both style and ease of movement, making it a perfect addition to any child's wardrobe. It also comes with a special bag for easy carrying to the Masjid.", "price": 18, "image": "../images/prayerWear/kids3.png" }
+      ]
+    }
   ]
-
 }

@@ -81,7 +81,7 @@
    
 }
 
-.view-btn.show >button{
+.view-btn.show button{
     width:100px;
     height: 50px;
     color:#1e567e;

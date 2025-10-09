@@ -16,6 +16,8 @@ import WearCollectionProvider from './Context/WearsCollectionContext';
 import PrayerTimesProvider from "./Context/PrayerTimesContext"
 import MatsProductsProvider from './Context/MatsProductsContext'
 import WearsProductsProvider from './Context/WearsProductsContext'
+import {CartProvider}  from './Context/CartContext';
+import WishlistProvider from './Context/WishlistContext';
 
 function App() {
   return (
@@ -24,7 +26,9 @@ function App() {
         <WearCollectionProvider> 
         <PrayerTimesProvider>
         <WearsProductsProvider>
-          <MatsProductsProvider>
+        <MatsProductsProvider>
+        <CartProvider>
+        <WishlistProvider>
     <Router>
       <Header />  
 
@@ -38,6 +42,8 @@ function App() {
          <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
     </Router>
+    </WishlistProvider>
+    </CartProvider>
     </MatsProductsProvider>
     </WearsProductsProvider>
     </PrayerTimesProvider>
